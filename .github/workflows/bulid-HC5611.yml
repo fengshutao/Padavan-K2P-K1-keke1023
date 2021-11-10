@@ -113,16 +113,13 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config  #去除
         echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config  #去除
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config  #去除
-        echo "CONFIG_FIRMWARE_INCLUDE_IPSET=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_TCPDUMP=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_FIREFLY=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_CURL=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config
@@ -135,7 +132,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_HDPARM=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
