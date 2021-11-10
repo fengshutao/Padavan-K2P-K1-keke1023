@@ -1,4 +1,4 @@
-name: Build Padavan-HC5661A
+name: Build Padavan-HC5611
 
 on: 
   release:
@@ -127,6 +127,14 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_HDPARM=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
@@ -141,5 +149,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-HC5661A
+        name: Padavan-HC5611
         path: /opt/images
