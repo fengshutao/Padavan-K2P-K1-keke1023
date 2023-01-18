@@ -142,5 +142,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-K1
+        name: Padavan-2023-1-18-K1
         path: /opt/images
